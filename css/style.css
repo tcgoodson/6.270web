@@ -70,6 +70,10 @@ body {
 	color: #D5A659;
 }
 
+p {
+	color: #fff2dc;
+}
+
 #container {
 	position: relative;
 	width: 900px;
@@ -78,7 +82,7 @@ body {
 	min-height: 100%; /* real browsers */
 	
 	margin: 0 auto;
-	padding: 0 0;
+	padding: 0 0 25px 0;
 	
 	background: #2F7069;
 	
@@ -145,6 +149,26 @@ nav a:hover {
 	padding: 15px 15px;
 	
 }
+
+.bio {
+	clear: both;
+	padding: 15px 0 15px 0;
+	border-top: 1px solid #28615C;
+}
+
+div.bio:first-child {
+	border-top: 0px;
+}
+
+.bio h1 {
+	display: inline;
+	font-size: 18px;
+}
+
+.team-image {
+	float: right;
+}
+
 
 footer {
 	-moz-box-sizing: border-box;

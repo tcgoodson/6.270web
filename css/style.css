@@ -155,7 +155,6 @@ nav a:hover {
 }
 
 .bio {
-	clear: both;
 	padding: 15px 0 15px 0;
 	border-top: 1px solid #28615C;
 }
@@ -164,12 +163,18 @@ div.bio:first-child {
 	border-top: 0px;
 }
 
-.bio h1 {
+.bio h2 {
 	display: inline;
+	margin: 0;
 	font-size: 20px;
+}
+.bio p {
+	margin-top: 10px;
+	margin-right: 150px;
 }
 
 .team-image {
+	display: block;
 	float: right;
 }
 
@@ -178,6 +183,7 @@ div.bio:first-child {
 	margin: 0;
 	font-size: 20px;
 }
+
 
 footer {
 	-moz-box-sizing: border-box;

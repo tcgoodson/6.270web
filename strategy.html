@@ -45,7 +45,17 @@
 		</nav>
     	<div id="main" role="main">
 			<h1>Strategy</h1>
-			<p>Sir Lancebot begins by driving around the field counterclockwise, exploring every territory. The robot then proceeds to drive to the nearest capturing spinner to capture the territory. Sir Lancebot will try four times to capture the territory; if it fails to capture the territory in those four tries, it will proceed to the next territory. If the robot does capture the territory, it will drive back to the center of the territory to orient itself to mine resources (collect ping pong balls). It will drive to the dispenser and attempt to dispense five balls. It will attempt this action three times until successful. After Sir Lancebot has captured the territory and mined its resources, it will proceed to the next territory to attempt the same process. After collecting 15 balls, Sir Lancebot will drive next to the center of the field and dump the balls into its goal.</p>
+			<h2>Overview</h2>
+
+			 <p>6.270 has a complex field, many interactive elements and an opponent with unpredictable actions, requiring a complicated strategy. Despite this difficult task, our strategy can be broken down in to many easier elements, which fit together to tell Sir Lancebot how to act and react.</p>
+
+			<h2>Initial exploration</h2>
+
+			<p>You earn points for every territory you discover, so Lancebot begins a match by driving counterclockwise (the “polite” direction) around the playing field, scoring himself some easy points.</p>
+
+			<h2> Capture and mine</h2>
+
+			<p>Once Lancebot has discovered all the territories, he begins capturing the one he is in. He captures the territory by driving to the center of the territory, approaching the capturing spinner, then activating his capturing wheels. If all goes according to plan, the territory is quickly captured (see below for what happens if it isn’t easily captured). Because the points gained are the same, Lancebot does not attempt to captured opponents squares before neutral squares, he generally progresses in a counterclockwise manner. Once a territory is captured, Lancebot approaches the dispenser (if the dispenser has any available balls) and dispenses 5 balls into his hopper.</p>
     	</div>
     	<footer>
 			Website design by Tosh Goodson

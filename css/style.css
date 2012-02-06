@@ -159,6 +159,7 @@ nav a:hover {
 
 #main h1{
 	font-size: 30px;
+	margin-bottom: 15px;
 }
 
 #main h2 {
@@ -209,7 +210,6 @@ div.bio:first-child {
 }
 
 .hardware-info h3{
-	display: inline;
 	margin: 0;
 	font-size: 20px;
 }

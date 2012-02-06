@@ -170,6 +170,10 @@ nav a:hover {
 	font-size: 17px;
 }
 
+.home-image {
+	float: right;
+}
+
 .bio {
 	padding: 15px 0 15px 0;
 	border-top: 1px solid #28615C;

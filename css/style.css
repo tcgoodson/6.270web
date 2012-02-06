@@ -71,14 +71,15 @@ body {
 }
 
 p {
+	margin-top: 10px;
 	color: #fff2dc;
 }
 
 a {
-	color: #86A143;
+	color: #86A143 !important;
 }
 a:hover {
-	color: #A78244;
+	color: #A78244 !important;
 }
 
 #container {
@@ -191,7 +192,6 @@ div.bio:first-child {
 	font-size: 20px;
 }
 .bio p {
-	margin-top: 10px;
 	margin-right: 150px;
 }
 

@@ -53,9 +53,13 @@
 
 			<p>You earn points for every territory you discover, so Lancebot begins a match by driving counterclockwise (the “polite” direction) around the playing field, scoring himself some easy points.</p>
 
-			<h2> Capture and mine</h2>
+			<h2>Capture and mine</h2>
 
 			<p>Once Lancebot has discovered all the territories, he begins capturing the one he is in. He captures the territory by driving to the center of the territory, approaching the capturing spinner, then activating his capturing wheels. If all goes according to plan, the territory is quickly captured (see below for what happens if it isn’t easily captured). Because the points gained are the same, Lancebot does not attempt to captured opponents squares before neutral squares, he generally progresses in a counterclockwise manner. Once a territory is captured, Lancebot approaches the dispenser (if the dispenser has any available balls) and dispenses 5 balls into his hopper.</p>
+			<h2>Dump</h2>
+			 <p>Once Lancebot has dispensed 3 hoppers (and therefore hopefully acquired 15 balls) he approaches the center, drives to the appropriate scoring zone depending on his color, then uses the servo arm to dispense the balls (as described in <a href="hardware.html">Hardware</a>). Lancebot does not dump at specific times or periods in the game, as we found it simply more effective to dump whenever Lancebot got close to full.</p>
+			<h2>What if something goes wrong?</h2>
+			<p>In a complex competition like this, it is frequent for robots to collide, lose parts, or just simply miss their targets by a small margin. Competitions would be extremely boring of all these simple errors caused the robots to simply become ineffective, so we implemented significant “what-if” code. The straightest forward is when the robot is attempting to capture a territory or dispense balls. If the robot attempts to activate a field element and nothing happens, it backs up, reorients itself, and attempts again. If the robot makes 3 such attempts unsuccessfully, it assumes something is blocking the field element or the element became inactive somehow, and moves on to the next territory. There is similar code if the robot collides with a wall or another robot in transit to an objective. Lancebot determines approximately how long it should take to reach a given objective, and then if it is still attempting to reach said target significantly after the calculated travel time, it assumes it is stuck, backs up, moves slightly and re-attempts. This also prevents the case where two robots are attempting to driving straight into each other, and therefore remain motionless for the entire competition.</p>
     	</div>
     	<footer>
 			Website design by Tosh Goodson

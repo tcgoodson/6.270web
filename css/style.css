@@ -74,6 +74,13 @@ p {
 	color: #fff2dc;
 }
 
+a {
+	color: #86A143;
+}
+a:hover {
+	color: #A78244;
+}
+
 #container {
 	position: relative;
 	width: 900px;
@@ -154,6 +161,15 @@ nav a:hover {
 	font-size: 30px;
 }
 
+#main h2 {
+	margin: 0;
+	font-size: 20px;
+}
+#main h3 {
+	margin: 0;
+	font-size: 17px;
+}
+
 .bio {
 	padding: 15px 0 15px 0;
 	border-top: 1px solid #28615C;
@@ -178,12 +194,26 @@ div.bio:first-child {
 	float: right;
 }
 
+.hardware-info {
+	padding: 15px 0 15px 0;
+	border-top: 1px solid #28615C;
+}
 
-.hardware-info h2{
+.hardware-info p{
+	margin-right: 210px;
+}
+
+.hardware-info h3{
+	display: inline;
 	margin: 0;
 	font-size: 20px;
 }
-
+.robot-image {
+	width: 200px;
+	display: block;
+	float: right;
+	clear: both;
+}
 
 footer {
 	-moz-box-sizing: border-box;
